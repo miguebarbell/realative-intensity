@@ -1,8 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import GlobalStyle from "./global"
+import Convert from "./pages/convert"
+import {Header} from "./components/header"
+import useDarkMode from "./hook/useDarkMode"
 
 function App() {
+    const [isDarkMode, setIsDarkMode] = useDarkMode();
   return (
     <div className="App">
       <header className="App-header">
