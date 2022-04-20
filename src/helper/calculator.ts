@@ -2,11 +2,13 @@
 // for sets with repetitions less than 5, use eplay.
 // TODO add more formulas
 function epleyFormula(strain: number, reps: number): number {
-    if (reps === 0) return 0;
-    else if (reps === 1) return strain;
+    // if (reps === 0) return 0;
+    // else if (reps === 1) return strain;
     return Math.round(strain * (1 + (reps/30)));
 }
 function brzyckiFormula(strain: number, reps: number): number {
+    // if (reps === 0) return 0;
+    // else if (reps === 1) return strain;
     return Math.round(strain * (36/(37 - reps)));
 }
 
